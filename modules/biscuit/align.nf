@@ -3,7 +3,7 @@
  */
 process BISCUIT_ALIGN {
     tag "$meta.id"
-    label 'process_med'
+    label 'process_high'
 
     module 'mamba'
     conda '/research/groups/northcgrp/home/common/Vincentius/envs/biscuit'

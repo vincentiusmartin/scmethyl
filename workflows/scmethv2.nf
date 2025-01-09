@@ -5,7 +5,8 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-include { BCDEMUL } from '../modules/custom/bcdemultiplex'
+//include { BCDEMUL } from '../modules/custom/bcdemultiplex'
+include { BCSPLIT } from '../modules/custom/bcsplit'
 include { FASTP } from '../modules/fastp/fastp'
 include { BISCUIT_ALIGN } from '../modules/biscuit/align'
 include { SAMBAMBA_MARKDUP } from '../modules/sambamba/markdup'
@@ -33,7 +34,7 @@ workflow SCMETHV2 {
     .map { meta, fastq -> [meta,fastq.flatten()] }
     .set { ch_fastq }
     
-    BCDEMUL(ch_fastq)
+    BCSPLIT(ch_fastq)
       .reads
       .transpose()
       .map{

@@ -47,5 +47,6 @@ workflow SCMETHV1 {
     .set{ ch_demultiplexed }
     
   FASTP(ch_demultiplexed) 
-  FASTP.out.reads | METHYLCTOOLS_FQCONV | SAMBAMBA_MARKDUP | METHYLCTOOLS_BCALL
+  FASTP.out.reads | METHYLCTOOLS_FQCONV | SAMBAMBA_MARKDUP
+  METHYLCTOOLS_BCALL(SAMBAMBA_MARKDUP.out.reads)
 }

@@ -1,0 +1,171 @@
+Jan-14 14:31:43.795 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --input samplesheet_test.csv
+Jan-14 14:31:43.852 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.1
+Jan-14 14:31:43.867 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/vmartin/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3,nf-tower@1.5.12,nf-wave@0.8.2
+Jan-14 14:31:43.875 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jan-14 14:31:43.875 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jan-14 14:31:43.878 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Jan-14 14:31:43.885 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jan-14 14:31:43.899 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/nextflow.config
+Jan-14 14:31:43.900 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/nextflow.config
+Jan-14 14:31:43.954 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jan-14 14:31:44.432 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Jan-14 14:31:44.443 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [happy_agnesi] DSL2 - revision: de099eabf7
+Jan-14 14:31:44.443 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jan-14 14:31:44.444 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jan-14 14:31:44.451 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/vmartin/.nextflow/secrets/store.json
+Jan-14 14:31:44.453 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@39a87e72] - activable => nextflow.secret.LocalSecretsProvider@39a87e72
+Jan-14 14:31:44.521 [main] DEBUG nextflow.Session - Session UUID: 27e3d8a6-3280-4c9d-8351-358781bbc670
+Jan-14 14:31:44.521 [main] DEBUG nextflow.Session - Run name: happy_agnesi
+Jan-14 14:31:44.521 [main] DEBUG nextflow.Session - Executor pool size: 4
+Jan-14 14:31:44.529 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jan-14 14:31:44.574 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.1 build 5866
+  Created: 15-04-2023 06:51 UTC (01:51 CDT)
+  System: Linux 4.18.0-477.58.1.el8_8.x86_64
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 20-internal-adhoc..src
+  Encoding: UTF-8 (ANSI_X3.4-1968)
+  Process: 2303018@noderome104 [10.220.17.4]
+  CPUs: 4 - Mem: 1003.4 GB (893.1 GB) - Swap: 16 GB (16 GB)
+Jan-14 14:31:44.668 [main] DEBUG nextflow.Session - Work-dir: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work [gpfs]
+Jan-14 14:31:44.703 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jan-14 14:31:44.715 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jan-14 14:31:44.740 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jan-14 14:31:44.747 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Jan-14 14:31:44.839 [main] DEBUG nextflow.Session - Session start
+Jan-14 14:31:45.015 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jan-14 14:31:46.034 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name SCMETHV1:BCSPLIT
+Jan-14 14:31:46.039 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-14 14:31:46.039 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-14 14:31:46.044 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jan-14 14:31:46.050 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=1003.4 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Jan-14 14:31:46.106 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_med` matches labels `process_med` for process with name SCMETHV1:FASTP
+Jan-14 14:31:46.106 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-14 14:31:46.106 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-14 14:31:46.109 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_med` matches labels `process_med` for process with name SCMETHV1:METHYLCTOOLS_FQCONV
+Jan-14 14:31:46.110 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-14 14:31:46.110 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-14 14:31:46.112 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_med` matches labels `process_med` for process with name SCMETHV1:SAMBAMBA_MARKDUP
+Jan-14 14:31:46.113 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-14 14:31:46.113 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-14 14:31:46.115 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_med` matches labels `process_med` for process with name SCMETHV1:METHYLCTOOLS_BCALL
+Jan-14 14:31:46.116 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-14 14:31:46.116 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-14 14:31:46.117 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: METHYLDACKEL, SCMETHV1:METHYLCTOOLS_FQCONV, SCMETHV1:SAMBAMBA_MARKDUP, SAMBAMBA_MARKDUP, METHYLCTOOLS_BCALL, BISCUIT_ALIGN, METHYLCTOOLS_FQCONV, SCMETHV1:FASTP, SCMETHV1:METHYLCTOOLS_BCALL, FASTP, SCMETHV1:BCSPLIT, BCSPLIT
+Jan-14 14:31:46.117 [main] DEBUG nextflow.Session - Igniting dataflow network (6)
+Jan-14 14:31:46.121 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SCMETHV1:BCSPLIT
+Jan-14 14:31:46.122 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SCMETHV1:FASTP
+Jan-14 14:31:46.122 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SCMETHV1:METHYLCTOOLS_FQCONV
+Jan-14 14:31:46.122 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SCMETHV1:SAMBAMBA_MARKDUP
+Jan-14 14:31:46.122 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SCMETHV1:METHYLCTOOLS_BCALL
+Jan-14 14:31:46.122 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jan-14 14:31:46.122 [main] DEBUG nextflow.Session - Session await
+Jan-14 14:31:46.238 [Actor Thread 1] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/research/groups/northcgrp/home/common/Vincentius/envs/renv; path=/research/groups/northcgrp/home/common/Vincentius/envs/renv
+Jan-14 14:31:46.297 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:31:46.303 [Task submitter] INFO  nextflow.Session - [7c/bc511f] Submitted process > SCMETHV1:BCSPLIT (blabla_P7L1_S1)
+Jan-14 14:32:08.912 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: SCMETHV1:BCSPLIT (blabla_P7L1_S1); status: COMPLETED; exit: 0; error: -; workDir: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work/7c/bc511fa6597327b3a5f6f80154bd5d]
+Jan-14 14:32:08.956 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jan-14 14:32:09.032 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:32:09.032 [Task submitter] INFO  nextflow.Session - [30/150d6d] Submitted process > SCMETHV1:FASTP (blabla_P7L1_S1-AD004)
+Jan-14 14:32:09.053 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:32:09.053 [Task submitter] INFO  nextflow.Session - [39/9a5875] Submitted process > SCMETHV1:FASTP (blabla_P7L1_S1-AD002)
+Jan-14 14:32:09.062 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:32:09.062 [Task submitter] INFO  nextflow.Session - [7a/b7391a] Submitted process > SCMETHV1:FASTP (blabla_P7L1_S1-AD001)
+Jan-14 14:32:09.070 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:32:09.070 [Task submitter] INFO  nextflow.Session - [05/d5ba58] Submitted process > SCMETHV1:FASTP (blabla_P7L1_S1-AD006)
+Jan-14 14:32:09.637 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: SCMETHV1:FASTP (blabla_P7L1_S1-AD001); status: COMPLETED; exit: 0; error: -; workDir: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work/7a/b7391a6343777baf4bb6c742c54bcf]
+Jan-14 14:32:09.646 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:32:09.647 [Task submitter] INFO  nextflow.Session - [d1/003a93] Submitted process > SCMETHV1:FASTP (blabla_P7L1_S1-AD010)
+Jan-14 14:32:09.668 [Actor Thread 4] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/research/groups/northcgrp/home/common/Vincentius/envs/scWGBS_pip; path=/research/groups/northcgrp/home/common/Vincentius/envs/scWGBS_pip
+Jan-14 14:32:09.674 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: SCMETHV1:FASTP (blabla_P7L1_S1-AD006); status: COMPLETED; exit: 0; error: -; workDir: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work/05/d5ba58160de7f43fc55bdc11944aed]
+Jan-14 14:32:09.699 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:32:09.699 [Task submitter] INFO  nextflow.Session - [cb/3499e8] Submitted process > SCMETHV1:FASTP (blabla_P7L1_S1-AD008)
+Jan-14 14:32:09.739 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: SCMETHV1:FASTP (blabla_P7L1_S1-AD004); status: COMPLETED; exit: 0; error: -; workDir: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work/30/150d6d5b667272ea530e164643252f]
+Jan-14 14:32:09.746 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:32:09.746 [Task submitter] INFO  nextflow.Session - [4c/03ed79] Submitted process > SCMETHV1:FASTP (blabla_P7L1_S1-AD007)
+Jan-14 14:32:09.749 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: SCMETHV1:FASTP (blabla_P7L1_S1-AD002); status: COMPLETED; exit: 0; error: -; workDir: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work/39/9a5875704027aed8f6d029c120ee02]
+Jan-14 14:32:09.760 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:32:09.761 [Task submitter] INFO  nextflow.Session - [35/09b5a5] Submitted process > SCMETHV1:FASTP (blabla_P7L1_S1-NA)
+Jan-14 14:32:10.246 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: SCMETHV1:FASTP (blabla_P7L1_S1-AD010); status: COMPLETED; exit: 0; error: -; workDir: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work/d1/003a93f6b68d7a3e408ebcbc003d49]
+Jan-14 14:32:10.271 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:32:10.271 [Task submitter] INFO  nextflow.Session - [c8/6234f0] Submitted process > SCMETHV1:FASTP (blabla_P7L1_S1-AD012)
+Jan-14 14:32:10.312 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: SCMETHV1:FASTP (blabla_P7L1_S1-AD007); status: COMPLETED; exit: 0; error: -; workDir: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work/4c/03ed79525a0f7ece9a9509c0dfdeda]
+Jan-14 14:32:10.323 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:32:10.323 [Task submitter] INFO  nextflow.Session - [13/19aa0a] Submitted process > SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD001)
+Jan-14 14:32:10.333 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: SCMETHV1:FASTP (blabla_P7L1_S1-AD008); status: COMPLETED; exit: 0; error: -; workDir: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work/cb/3499e8b3c6e678b83f02f950d1f3b0]
+Jan-14 14:32:10.350 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: SCMETHV1:FASTP (blabla_P7L1_S1-NA); status: COMPLETED; exit: 0; error: -; workDir: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work/35/09b5a5e5dca4e5b45ae4d52a8630a0]
+Jan-14 14:32:10.363 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:32:10.364 [Task submitter] INFO  nextflow.Session - [ab/a75f27] Submitted process > SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD006)
+Jan-14 14:32:10.368 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:32:10.369 [Task submitter] INFO  nextflow.Session - [09/fc5611] Submitted process > SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD002)
+Jan-14 14:32:10.727 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: SCMETHV1:FASTP (blabla_P7L1_S1-AD012); status: COMPLETED; exit: 0; error: -; workDir: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work/c8/6234f0ea01495c55f352ca60b27173]
+Jan-14 14:32:10.742 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:32:10.742 [Task submitter] INFO  nextflow.Session - [ec/361f58] Submitted process > SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD004)
+Jan-14 14:32:22.876 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD004); status: COMPLETED; exit: 127; error: -; workDir: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work/ec/361f58ebeb50e4a17290ee2c290bbb]
+Jan-14 14:32:22.957 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD004); work-dir=/research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work/ec/361f58ebeb50e4a17290ee2c290bbb
+  error [nextflow.exception.ProcessFailedException]: Process `SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD004)` terminated with an error exit status (127)
+Jan-14 14:32:22.960 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:32:22.960 [Task submitter] INFO  nextflow.Session - [88/b9afb4] Submitted process > SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD010)
+Jan-14 14:32:22.966 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD004)'
+
+Caused by:
+  Process `SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD004)` terminated with an error exit status (127)
+
+Command executed:
+
+  [ ! -f  blabla_P7L1_S1-AD004_1.fastq.gz ] && ln -sf blabla_P7L1_S1-AD004_1.fastp.fastq.gz blabla_P7L1_S1-AD004_1.fastq.gz
+  [ ! -f  blabla_P7L1_S1-AD004_2.fastq.gz ] && ln -sf blabla_P7L1_S1-AD004_2.fastp.fastq.gz blabla_P7L1_S1-AD004_2.fastq.gz
+  
+  methylCtools fqconv -1 blabla_P7L1_S1-AD004_2.fastq.gz -2 blabla_P7L1_S1-AD004_1.fastq.gz - |     bwa mem -t 4 -T 0 -M -p /research/groups/northcgrp/home/common/Vincentius/resources/references/hg38/methylctools/hg38.conv.fa - |     samtools view -Sbu - |     samtools sort - > blabla_P7L1_S1-AD004.bam
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 5: samtools: command not found
+  .command.sh: line 5: samtools: command not found
+  [fqconv 2025-01-14 14:32:14] command: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/bin/methylCtools fqconv -1 blabla_P7L1_S1-AD004_2.fastq.gz -2 blabla_P7L1_S1-AD004_1.fastq.gz -
+  [fqconv 2025-01-14 14:32:14] start: converting reads C to T
+  [fqconv 2025-01-14 14:32:14] start: converting reads G to A
+  [M::bwa_idx_load_from_disk] read 0 ALT contigs
+  Traceback (most recent call last):
+    File "/research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/bin/methylCtools", line 56, in <module>
+      mod_fqconv(sys.argv[sys.argv.index("fqconv")+1:])
+    File "/research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/bin/fqconv.py", line 172, in mod_fqconv
+      out1.write(o12)
+  IOError: [Errno 32] Broken pipe
+
+Work dir:
+  /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work/ec/361f58ebeb50e4a17290ee2c290bbb
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Jan-14 14:32:22.968 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD004)` terminated with an error exit status (127)
+Jan-14 14:32:22.977 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
+[process] SCMETHV1:SAMBAMBA_MARKDUP
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] SCMETHV1:METHYLCTOOLS_BCALL
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Jan-14 14:32:22.978 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jan-14 14:32:22.978 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jan-14 14:32:22.984 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (4)
+Jan-14 14:32:23.023 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD001) -- command: kill -TERM 2304025; exit: 1 
+ bash: line 0: kill: (2304025) - No such process
+
+Jan-14 14:32:23.059 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD006) -- command: kill -TERM 2304036; exit: 1 
+ bash: line 0: kill: (2304036) - No such process
+
+Jan-14 14:32:23.095 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD002) -- command: kill -TERM 2304039; exit: 1 
+ bash: line 0: kill: (2304039) - No such process
+
+Jan-14 14:32:23.140 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=10; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=4; submittedCount=1; runningCount=0; retriesCount=0; abortedCount=3; succeedDuration=49.8s; failedDuration=12s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=4; peakCpus=4; peakMemory=32 GB; ]
+Jan-14 14:32:23.285 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jan-14 14:32:23.359 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

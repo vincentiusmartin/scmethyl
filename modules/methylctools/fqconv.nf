@@ -3,8 +3,10 @@ process METHYLCTOOLS_FQCONV {
   tag "$meta.id"
   label 'process_med'
   
+  module 'samtools/1.10'
+  module 'bwa/0.7.17'
   module 'mamba'
-  conda '/research/groups/northcgrp/home/common/Vincentius/envs/methylctools'
+  conda '/research/groups/northcgrp/home/common/Vincentius/envs/scWGBS_pip'
   
   publishDir "${params.outdir}/methylctools/fqconv", mode: 'copy'
   
@@ -25,6 +27,7 @@ process METHYLCTOOLS_FQCONV {
   methylCtools fqconv -1 ${prefix}_2.fastq.gz -2 ${prefix}_1.fastq.gz - | \
     bwa mem -t 4 -T 0 -M -p ${params.genome_ref_conv} - | \
     samtools view -Sbu - | \
+    methylCtools bconv -m ${prefix}.metrics.txt - - | \
     samtools sort - > ${prefix}.bam
   """
   // 

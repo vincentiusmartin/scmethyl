@@ -1,0 +1,119 @@
+Jan-14 14:38:01.348 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --input samplesheet_test.csv -resume
+Jan-14 14:38:01.410 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.1
+Jan-14 14:38:01.426 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/vmartin/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3,nf-tower@1.5.12,nf-wave@0.8.2
+Jan-14 14:38:01.435 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jan-14 14:38:01.436 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jan-14 14:38:01.438 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Jan-14 14:38:01.446 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jan-14 14:38:01.461 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/nextflow.config
+Jan-14 14:38:01.461 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/nextflow.config
+Jan-14 14:38:01.521 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jan-14 14:38:01.988 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Jan-14 14:38:02.000 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [backstabbing_euclid] DSL2 - revision: de099eabf7
+Jan-14 14:38:02.000 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jan-14 14:38:02.000 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jan-14 14:38:02.010 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/vmartin/.nextflow/secrets/store.json
+Jan-14 14:38:02.013 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@45acdd11] - activable => nextflow.secret.LocalSecretsProvider@45acdd11
+Jan-14 14:38:02.069 [main] DEBUG nextflow.Session - Session UUID: 27e3d8a6-3280-4c9d-8351-358781bbc670
+Jan-14 14:38:02.069 [main] DEBUG nextflow.Session - Run name: backstabbing_euclid
+Jan-14 14:38:02.070 [main] DEBUG nextflow.Session - Executor pool size: 4
+Jan-14 14:38:02.078 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jan-14 14:38:02.126 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.1 build 5866
+  Created: 15-04-2023 06:51 UTC (01:51 CDT)
+  System: Linux 4.18.0-477.58.1.el8_8.x86_64
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 20-internal-adhoc..src
+  Encoding: UTF-8 (ANSI_X3.4-1968)
+  Process: 2312399@noderome104 [10.220.17.4]
+  CPUs: 4 - Mem: 1003.4 GB (893 GB) - Swap: 16 GB (16 GB)
+Jan-14 14:38:02.184 [main] DEBUG nextflow.Session - Work-dir: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work [gpfs]
+Jan-14 14:38:02.242 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jan-14 14:38:02.250 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jan-14 14:38:02.285 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jan-14 14:38:02.293 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Jan-14 14:38:02.394 [main] DEBUG nextflow.Session - Session start
+Jan-14 14:38:02.540 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jan-14 14:38:03.585 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name SCMETHV1:BCSPLIT
+Jan-14 14:38:03.590 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-14 14:38:03.590 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-14 14:38:03.596 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jan-14 14:38:03.601 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=1003.4 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Jan-14 14:38:03.658 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_med` matches labels `process_med` for process with name SCMETHV1:FASTP
+Jan-14 14:38:03.659 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-14 14:38:03.659 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-14 14:38:03.665 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_med` matches labels `process_med` for process with name SCMETHV1:METHYLCTOOLS_FQCONV
+Jan-14 14:38:03.665 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-14 14:38:03.665 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-14 14:38:03.670 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_med` matches labels `process_med` for process with name SCMETHV1:SAMBAMBA_MARKDUP
+Jan-14 14:38:03.671 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-14 14:38:03.671 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-14 14:38:03.674 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_med` matches labels `process_med` for process with name SCMETHV1:METHYLCTOOLS_BCALL
+Jan-14 14:38:03.674 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-14 14:38:03.674 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-14 14:38:03.676 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: METHYLDACKEL, SCMETHV1:METHYLCTOOLS_FQCONV, SCMETHV1:SAMBAMBA_MARKDUP, SAMBAMBA_MARKDUP, BISCUIT_ALIGN, METHYLCTOOLS_BCALL, METHYLCTOOLS_FQCONV, SCMETHV1:FASTP, SCMETHV1:METHYLCTOOLS_BCALL, FASTP, SCMETHV1:BCSPLIT, BCSPLIT
+Jan-14 14:38:03.676 [main] DEBUG nextflow.Session - Igniting dataflow network (6)
+Jan-14 14:38:03.683 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SCMETHV1:BCSPLIT
+Jan-14 14:38:03.683 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SCMETHV1:FASTP
+Jan-14 14:38:03.684 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SCMETHV1:METHYLCTOOLS_FQCONV
+Jan-14 14:38:03.684 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SCMETHV1:SAMBAMBA_MARKDUP
+Jan-14 14:38:03.684 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SCMETHV1:METHYLCTOOLS_BCALL
+Jan-14 14:38:03.684 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jan-14 14:38:03.684 [main] DEBUG nextflow.Session - Session await
+Jan-14 14:38:03.768 [Actor Thread 5] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/research/groups/northcgrp/home/common/Vincentius/envs/renv; path=/research/groups/northcgrp/home/common/Vincentius/envs/renv
+Jan-14 14:38:03.865 [Actor Thread 6] INFO  nextflow.processor.TaskProcessor - [7c/bc511f] Cached process > SCMETHV1:BCSPLIT (blabla_P7L1_S1)
+Jan-14 14:38:03.974 [Actor Thread 6] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jan-14 14:38:04.072 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [7a/b7391a] Cached process > SCMETHV1:FASTP (blabla_P7L1_S1-AD001)
+Jan-14 14:38:04.074 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [39/9a5875] Cached process > SCMETHV1:FASTP (blabla_P7L1_S1-AD002)
+Jan-14 14:38:04.085 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [30/150d6d] Cached process > SCMETHV1:FASTP (blabla_P7L1_S1-AD004)
+Jan-14 14:38:04.092 [Actor Thread 9] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/research/groups/northcgrp/home/common/Vincentius/envs/scWGBS_pip; path=/research/groups/northcgrp/home/common/Vincentius/envs/scWGBS_pip
+Jan-14 14:38:04.117 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [cb/3499e8] Cached process > SCMETHV1:FASTP (blabla_P7L1_S1-AD008)
+Jan-14 14:38:04.122 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [05/d5ba58] Cached process > SCMETHV1:FASTP (blabla_P7L1_S1-AD006)
+Jan-14 14:38:04.143 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [35/09b5a5] Cached process > SCMETHV1:FASTP (blabla_P7L1_S1-NA)
+Jan-14 14:38:04.148 [Actor Thread 2] INFO  nextflow.processor.TaskProcessor - [c8/6234f0] Cached process > SCMETHV1:FASTP (blabla_P7L1_S1-AD012)
+Jan-14 14:38:04.157 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [4c/03ed79] Cached process > SCMETHV1:FASTP (blabla_P7L1_S1-AD007)
+Jan-14 14:38:04.164 [Actor Thread 4] INFO  nextflow.processor.TaskProcessor - [d1/003a93] Cached process > SCMETHV1:FASTP (blabla_P7L1_S1-AD010)
+Jan-14 14:38:04.166 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:38:04.168 [Task submitter] INFO  nextflow.Session - [6b/cc66cf] Submitted process > SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD004)
+Jan-14 14:38:04.177 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:38:04.177 [Task submitter] INFO  nextflow.Session - [40/893625] Submitted process > SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD002)
+Jan-14 14:38:04.197 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:38:04.202 [Task submitter] INFO  nextflow.Session - [40/41f6a0] Submitted process > SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD001)
+Jan-14 14:38:04.206 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:38:04.225 [Task submitter] INFO  nextflow.Session - [d1/125a48] Submitted process > SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-NA)
+Jan-14 14:38:20.975 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-NA); status: COMPLETED; exit: 0; error: -; workDir: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work/d1/125a48a7815c000f2d4adb0302c691]
+Jan-14 14:38:20.994 [Actor Thread 8] DEBUG nextflow.conda.CondaCache - conda found local env for environment=/research/groups/northcgrp/home/common/Vincentius/envs/methylctools; path=/research/groups/northcgrp/home/common/Vincentius/envs/methylctools
+Jan-14 14:38:21.014 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:38:21.015 [Task submitter] INFO  nextflow.Session - [54/8b94ae] Submitted process > SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD012)
+Jan-14 14:38:21.200 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD002); status: COMPLETED; exit: 0; error: -; workDir: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work/40/893625f0b5c208ab936da2834ae47a]
+Jan-14 14:38:21.239 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:38:21.239 [Task submitter] INFO  nextflow.Session - [e5/3e2c75] Submitted process > SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD007)
+Jan-14 14:38:21.300 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD004); status: COMPLETED; exit: 0; error: -; workDir: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work/6b/cc66cfe7664bfedeac0eaa15ca44bf]
+Jan-14 14:38:21.317 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:38:21.317 [Task submitter] INFO  nextflow.Session - [ad/136387] Submitted process > SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD008)
+Jan-14 14:38:21.332 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD001); status: COMPLETED; exit: 0; error: -; workDir: /research/rgs01/home/clusterHome/vmartin/projects/snmcseq/pipeline/scmethyl/work/40/41f6a045f735bd5c61f2444601d00b]
+Jan-14 14:38:21.360 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-14 14:38:21.371 [Task submitter] INFO  nextflow.Session - [05/4048fe] Submitted process > SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD006)
+Jan-14 14:38:27.332 [SIGINT handler] DEBUG nextflow.Session - Session aborted -- Cause: SIGINT
+Jan-14 14:38:27.355 [SIGINT handler] DEBUG nextflow.Session - The following nodes are still active:
+[process] SCMETHV1:SAMBAMBA_MARKDUP
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] SCMETHV1:METHYLCTOOLS_BCALL
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+Jan-14 14:38:27.382 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jan-14 14:38:27.382 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jan-14 14:38:27.397 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (4)
+Jan-14 14:38:27.750 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD008) -- command: kill -TERM 2313315; exit: 1 
+ bash: line 0: kill: (2313315) - No such process
+
+Jan-14 14:38:27.787 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill SCMETHV1:METHYLCTOOLS_FQCONV (blabla_P7L1_S1-AD006) -- command: kill -TERM 2313324; exit: 1 
+ bash: line 0: kill: (2313324) - No such process
+
+Jan-14 14:38:27.808 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=4; failedCount=0; ignoredCount=0; cachedCount=10; pendingCount=5; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=4; succeedDuration=1m 8s; failedDuration=0ms; cachedDuration=49.8s;loadCpus=0; loadMemory=0; peakRunning=4; peakCpus=4; peakMemory=32 GB; ]
+Jan-14 14:38:27.817 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jan-14 14:38:27.859 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

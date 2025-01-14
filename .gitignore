@@ -1,8 +1,11 @@
 *csv
 *pyc
 *_vm.*
+.nextflow*
 
 __pycache__
 resource
 work
 results
+result
+

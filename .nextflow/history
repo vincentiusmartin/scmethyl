@@ -1,8 +1,0 @@
-2025-01-14 14:22:47	-	evil_legentil	-	de099eabf7a5e13d3356a6b840018a09	39c80ae8-d337-4a5a-8d67-63b6a533e878	nextflow run main.nf --input samplesheet_test.csv
-2025-01-14 14:24:17	-	gloomy_lamarck	-	de099eabf7a5e13d3356a6b840018a09	52228673-fb5b-41ca-97ba-a2f052490a90	nextflow run main.nf --input samplesheet_test.csv
-2025-01-14 14:25:35	28.3s	desperate_marconi	ERR	de099eabf7a5e13d3356a6b840018a09	08e039d8-940c-41a4-90c0-c85c91fec726	nextflow run main.nf --input samplesheet_test.csv
-2025-01-14 14:31:44	39.4s	happy_agnesi	ERR	de099eabf7a5e13d3356a6b840018a09	27e3d8a6-3280-4c9d-8351-358781bbc670	nextflow run main.nf --input samplesheet_test.csv
-2025-01-14 14:36:14	27.6s	big_woese	ERR	de099eabf7a5e13d3356a6b840018a09	27e3d8a6-3280-4c9d-8351-358781bbc670	nextflow run main.nf --input samplesheet_test.csv -resume
-2025-01-14 14:38:02	25.9s	backstabbing_euclid	ERR	de099eabf7a5e13d3356a6b840018a09	27e3d8a6-3280-4c9d-8351-358781bbc670	nextflow run main.nf --input samplesheet_test.csv -resume
-2025-01-14 14:38:48	1m 17s	fabulous_bell	OK	de099eabf7a5e13d3356a6b840018a09	c52b31c4-7104-42c2-b1dc-4ceb5f51b1f2	nextflow run main.nf --input samplesheet_test.csv
-2025-01-14 14:51:19	4m 6s	backstabbing_ptolemy	OK	de099eabf7a5e13d3356a6b840018a09	c52b31c4-7104-42c2-b1dc-4ceb5f51b1f2	nextflow run main.nf --input samplesheet_test.csv -resume
